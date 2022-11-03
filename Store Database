@@ -1,0 +1,20 @@
+CREATE TABLE TokyoHands (id integer primary key, Product_name text, Brand text, Rating integer, Price integer);
+INSERT INTO TokyoHands 
+VALUES 
+(1,'Crewneck Sweater','Uniqlo',9.5,20),
+(2,'Polo Shirt','Ralph Lauren',10,300),
+(3,'Chef Pants','GU',9.5,24),
+(4,'Dickies 874','Dickies',6.5,70),
+(5,'Denim Jacket','Levis',9.5,100),
+(7,'Bucket hat','Ben davis',8.5,15),
+(8,'Fleece Jakcet','Uniqlo',9.5,19),
+(9,'Formal Shirt','Uniqlo',4.5,40),
+(10,'Dunks','Nike',9.5,90),
+(11,'Belt','Uniqlo',8.5,30),
+(12,'Turtle Neck','Gap',7.5,40),
+(13,'Overshirt','Uniqlo',7.5,40),
+(14,'Tank Top','Uniqlo',9.5,23),
+(15,'Underwear','Ck',9.5,40);
+SELECT * FROM TokyoHands ORDER BY Price desc;
+SELECT sum(Price) FROM TokyoHands;
+SELECT * FROM TokyoHands WHERE Price > 16 ORDER BY Rating desc;
